@@ -5,9 +5,41 @@
 # Icon must end with two \r
 Icon
 
+# Sass
+.sass-cache/
+*.css.map
 
 # Thumbnails
 ._*
+
+# Packages #
+############
+# it's better to unpack these files and commit the raw source
+# git has its own built in compression methods
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Logs and databases #
+######################
+*.log
+*.sql
+*.sqlite
+
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
 
 # Files that might appear in the root of a volume
 .DocumentRevisions-V100
@@ -23,3 +55,18 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
+
+# Node specific #
+#################
+lib-cov
+*.seed
+*.log
+*.dat
+*.out
+*.pid
+*.gz
+pids
+logs
+#results
+npm-debug.log
+node_modules/
