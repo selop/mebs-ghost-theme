@@ -1,6 +1,6 @@
 {
-  "name": "minimalistic",
+  "name": "mebs",
   "version": "0.1.0",
-  "author": "Raphael Riegger - http://rriegger.com",
-  "description": "Minimalistic Blog Theme"
+  "author": "Sergej Lopatkin",
+  "description": "Mebs Ghost Theme, modifiy from Minimalistic Blog Theme (http://rriegger.com)"
 }
