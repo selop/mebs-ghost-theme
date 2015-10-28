@@ -1,0 +1,37 @@
+{{!< default}}
+
+
+        <div class="container clearfix">
+          <main role="main" class="content">
+              {{#foreach posts}}
+              <article class="{{post_class}} post">
+                <h2><a href="{{url}}" title="{{title}}">{{title}}</a></h2>
+                <footer class="post-info">Posted on <span class="post-meta"><time datetime="{{date published_at format="YYYY-MM-DD"}}">{{date published_at format="Do MMMM YYYY"}}</time> {{tags separator=", " prefix="Tagged in "}}</span></footer>
+                <hr>
+                <p>{{content}}</p>
+
+                <!--<a href="{{url}}" title="{{title}}">Read more &raquo;</a>-->
+              </article>
+              {{/foreach}}
+
+              {{pagination}}
+
+          </main>
+
+
+
+          <aside class="author">
+
+            {{#if @blog.logo}}<img class="profile-image" src="{{@blog.logo}}" alt="" />{{/if}}
+            <p class="name">by <strong>{{@blog.title}}</strong></p>
+            <!--<p class="link"><a href="http://rriegger.com" title="Raphael Riegger - UI/UX Designer">{{@blog.description}}</a></p>-->
+            <p class="address">Dresden, Germany</p>
+
+            <ul class="social">
+              <li><a class="icon-instagram" href="https://instagram.com/mebsmedchen/" title="Follow me on Instagram"></a></li>
+              <!--<li><a class="icon-mail" href="mailto:jessica.theimer@yahoo.de" title="Shoot me an E-Mail"></a></li>
+              <li><a class="icon-dribble" href="https://www.pinterest.com/jessicat0932/" title="Folow me on Pinterest"></a></li>-->
+            </ul>
+
+          </aside>
+        </div>
