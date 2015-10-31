@@ -9,8 +9,9 @@
                 <h1><a href="{{url}}" title="{{title}}">{{title}}</a></h1>
                 <footer class="post-info">Posted on <span class="post-meta"><time datetime="{{date published_at format="YYYY-MM-DD"}}">{{date published_at format="Do MMMM YYYY"}}</time> {{tags separator=", " prefix="Tagged in "}}</span></footer>
 
-                {{content}}
-                
+{{! No indention to prevent handlebars indenting <pre> tag content}}
+{{content}}
+
                 <ul class="share-buttons">
                     <li>Share this article:</li>
                     <li><a class="icon-facebook-squared" href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}"
@@ -40,6 +41,7 @@
                   <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                   <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
               </div>
+
               {{/post}}
 
           </main>
@@ -47,9 +49,8 @@
 
             {{#if @blog.logo}}<img class="profile-image" src="{{@blog.logo}}" alt="" />{{/if}}
             <p class="name">by <strong>{{@blog.title}}</strong></p>
-            <!--<p class="link"><a href="http://rriegger.com" title="Raphael Riegger - UI/UX Designer">{{@blog.description}}</a></p>-->
             <p class="address">Dresden, Germany</p>
-
+            <p class="link"><a href="http://mebsmedchen.de" title="Mebsmedchen beauty blog">mebsmedchen.de</a></p>
             <ul class="social">
               <li><a class="icon-instagram" href="https://instagram.com/mebsmedchen/" title="Follow me on Instagram"></a></li>
               <!--<li><a class="icon-mail" href="mailto:jessica.theimer@yahoo.de" title="Shoot me an E-Mail"></a></li>

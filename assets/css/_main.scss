@@ -438,7 +438,31 @@ body.post-template .site-header h2 .logo{
 	@include image-2x("../img/mebs-logo@2x.png", 476px, 95px);
 }
 
+// -----------------------------------------------------------------------------
+// Back to Top Button
+// -----------------------------------------------------------------------------
 
+a.back-to-top{
+	display: none;
+	width: 60px;
+	height: 60px;
+	text-indent: -9999px;
+	position: fixed;
+	z-index: 999;
+	right: 20px;
+	bottom: 20px;
+	background: #ddd url("../img/up-arrow.png") no-repeat center 43%;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+	/* background color transition */
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	transition: 1s;
+	&:hover {
+		background: #000 url("../img/up-arrow.png") no-repeat center 43%;
+	}
+}
 
 // -----------------------------------------------------------------------------
 // Responsive Styles
